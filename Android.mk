@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 ifneq ($(TARGET_SIMULATOR),true)
-ifeq ($(BOARD_WPA_SUPPLICANT_DRIVER),WEXT)
+#ifeq ($(BOARD_WPA_SUPPLICANT_DRIVER),WEXT)
+ifneq ($(BOARD_WPA_SUPPLICANT_DRIVER),)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
